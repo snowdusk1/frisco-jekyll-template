@@ -1,0 +1,21 @@
+---
+title: Search 
+description: Search my blog 
+image: /images/bike_close_eyes.jpg 
+---
+
+<section class="hero" style="background-image: url({% include relative-src.html src=page.image %})">
+	<div class="inner-hero text-container">
+		<div class="hero-text-container">
+			<h1 class="editable">Search</h1>
+			<p class="subtext editable">Search my blog...</p>
+		<div class="cta button alt"><a href="/archive/">Next...</a></div>
+        </div>
+    </div>
+	<div class="learn-more"><a href="#learn-more">Click here...<span class="arrow">&#x25BC;</span></a></div>
+</section>
+<section class="pad">
+    <div class="container" id="learn-more">
+      {% include search_ui.html %}
+    </div>
+</section>

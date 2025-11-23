@@ -1,6 +1,12 @@
 - name: Blog
   link: /blog/
+- name: Intergalactic
+  link: /intergalactic/
 - name: About
   link: /about/
 - name: Contact
   link: /contact/
+- name: Search
+  link: /search/
+- name: Archive
+  link: /archive/

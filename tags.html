@@ -1,0 +1,28 @@
+---
+title: Tags 
+description: Choose a topic... 
+image: /images/on_the_way_to_izumo.jpg
+---
+
+<section class="hero" style="background-image: url({% include relative-src.html src=page.image %})">
+	<div class="inner-hero text-container">
+		<div class="hero-text-container">
+			<h1 class="editable">Tags</h1>
+			<p class="subtext editable">Choose a topic...</p>
+		</div>
+	</div>
+</section>
+
+<section class="pad">
+	<div class="container">
+{% assign tags = site.tags | sort %}
+{% for tag in tags %}
+ <span class="site-tag">
+    <a href="/tag/{{ tag | first | slugify }}/"
+        style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%">
+            {{ tag[0] | replace:'-', ' ' }} ({{ tag | last | size }})
+    </a>
+</span>
+{% endfor %} 
+	</div>
+</section>

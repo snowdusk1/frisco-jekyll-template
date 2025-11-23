@@ -2,7 +2,7 @@
 title:
 date:
 description:
-categories:
+tag:
 image:
 author_staff_member:
 ---

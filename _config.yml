@@ -1,24 +1,29 @@
 # ----
 # Site
 
-title: Frisco Template
-url: "https://brave-submarine.cloudvent.net"
-baseurl:
-google_analytics_key:
-google_maps_javascript_api_key:
-disqus_shortname:
+title: snowdusk 
+url: "https://snowdusk.sdf.org"
+# baseurl:
+# google_analytics_key:
+# google_maps_javascript_api_key:
+disqus_shortname: snowdusk
+
+destination: /Users/gary/jekyll/frisco-jekyll-template/_site/
+
+feed:
+  path: /feed.xml
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
-logo: /siteicon.png
-description: App marketing template for Jekyll.
+logo: /images/logo/snowflake.png
+description: My home on the WWW 
 author:
-  name:
-  email:
-  twitter: # twitter username without the @ symbol
+  name: snowdusk
+  email: snowdusk@ma.sdf.org
+  # twitter: # twitter username without the @ symbol
 social:
-  name: Frisco Template
+  name: Mastodon 
   links:
-    - https://github.com/CloudCannon/frisco-jekyll-template
+    - https://github.com/CloudCannon/frisco-jekyll-template 
 
 # -----
 # Build
@@ -49,7 +54,7 @@ paginate: 10
 paginate_path: "/blog/:num/"
 
 jekyll-archives:
-  enabled: ['categories']
+  enabled: ['tags']
 
 defaults:
   -
@@ -117,5 +122,5 @@ social_icons:
   - RSS
 
 _comments:
-  description: Text shown when sharing on social media
-  blurb: Short bio or description of this person
+  description: snowdusk 
+  blurb: My home on the WWW 

@@ -1,80 +1,56 @@
 ---
 title: Contact
-description: Send us a message to find out more!
-map:
-  latitude: -45.8787605
-  longitude: 170.5027976
-  address: "1 George Street, Dunedin, New Zealand"
-  zoom: 13
-image: https://source.unsplash.com/WNAO036c6FM/2000x1322?a=.png
+description: Talk to me... 
+image: /images/enkai.jpg 
 ---
 
 <section class="hero" style="background-image: url({% include relative-src.html src=page.image %})">
 	<div class="inner-hero text-container">
 		<div class="hero-text-container">
-			<h1 class="editable">Get in touch today</h1>
-			<p class="subtext editable">If you have any questions or queries send us a message and we'll get back to you as soon as we can.</p>
+			<h1 class="editable">Contact</h1>
+			<p class="subtext editable">Talk to me... please</p>
+			<div class="cta button alt"><a href="/search/">Next...</a></div>
 		</div>
 	</div>
+	<div class="learn-more"><a href="#learn-more">More...<span class="arrow">&#x25BC;</span></a></div>
 </section>
 
-<section class="pad">
-	<div class="text-container contact-box">
-		<form action="{{ site.baseurl }}/contact-success/" method="post" class="contact-form">
-			<input type="hidden" name="_to" value="support@cloudcannon.com">
-			<input type="text" name="_gotcha" style="display: none;">
-
-			<label for="name">Name</label>
-			<input type="text" name="name" id="name" placeholder="Enter your name...">
-
-			<label for="email">Email Address</label>
-			<input type="email" name="email" id="email" placeholder="Enter your email..." required>
-
-			<label for="message">Message</label>
-			<textarea name="message" id="message" placeholder="Enter your message..."></textarea>
-
-			<input type="submit" value="Send Message">
-		</form>
-
-		<div class="contact-details">
-			<h3>Address</h3>
-			<address><a target="_blank" href="https://www.google.com/maps/place/{{ page.map.address | url_encode }}">{{ page.map.address | replace: ", ", ", <br>" }}</a></address>
-
-			<h3>Email</h3>
-			<p class="editable"><a href="mailto:support@example.com">support@example.com</a></p>
-		</div>
-	</div>
+<section class="pad" id="learn-more">
+  <div class="container">
+      <ul>
+        <li>e-mail: snowdusk @ ma.sdf.org</li>
+        <li>PGP (snowdusk @ ma.sdf.org - FE24F72C): <a href="/contact/snowdusk_FE24F72C_public.txt">text</a> | <a href="/contact/snowdusk_FE24F72C_public.asc">asc</a></li>
+        <li>Gopher: 
+          <ul>
+            <li><a href="gopher://gopher.club:70/1/users/snowdusk/">gopher://gopher.club:70/1/users/snowdusk/</a> (gopher client required)</li>
+            <li><a href="https://gopher.floodgap.com/gopher/gw?=gopher.club+70+312f75736572732f736e6f776475736b2f">gopher://gopher.club:70/1/users/snowdusk/</a> (via www/html proxy)</li>
+          </ul>
+        </li>
+        <li>Social Media:
+          <ul>
+             <li><a href="https://mastodon.sdf.org/@snowdusk">Mastodon</a></li>
+             <li><a href="https://soundcloud.com/snowdusk">Soundcloud</a></li>
+             <li><a href="https://www.instagram.com/snowdusk_/">Instagram</a></li>
+             <li><a href="https://pixelfed.sdf.org/@snowdusk">Pixelfed</a></li>
+             <li><a href="https://www.youtube.com/channel/UCr4FgY_Wb0l5ahCoynqEICw">Youtube</a></li>
+             <li><a href="https://toobnix.org/@snowdusk_channel">Toobnix</a></li>
+             <li><a href="https://www.threads.net/@snowdusk_">Threads</a></li>
+             <li><a href="https://vimeo.com/garyg3">Vimeo</li>
+             <li><a href="https://gravatar.com/snowdusk1">Gravatar</a></li>
+             <li><a href="https://serato.com/playlists/id:6256557">Serato DJ</a></li>
+          </ul>
+        </li>
+        <li>Live chat:
+          <ul>
+            <li><a href="https://sdf.org/?tutorials/comnotirc">COMMODE</a> (or 'com' - a chat program on the <a href="http://sdf.org">SDF Public Access UNIX System</a>: 'snowdusk' in the 'anonradio' room</li>
+            <li><a href="https://en.wikipedia.org/wiki/Internet_Relay_Chat">IRC</a>:
+              <ul>
+                <li>'snowdusk' <a href="https://sdf.org/?tutorials/irc-channels">SDF IRC</a> #sdf #anonradio</li>
+                <li>'snowdusk' <a href="https://tilde.chat">Tilde Chat</a> #tilderadio #tilderadio-djs</li>
+              </ul>
+            </li>  
+          </ul>
+       </li>
+      </ul>
+  </div>
 </section>
-
-<div class="map" id="map"></div>
-
-<script>
-	window.mapData = {{ page.map | jsonify }};
-
-	function initMap() {
-		var myOptions = {
-			scrollwheel: false,
-			draggable: false,
-			panControl: false,
-			disableDefaultUI: true,
-			styles: [{"featureType":"landscape.man_made","elementType":"geometry","stylers":[{"color":"#f7f1df"}]},{"featureType":"landscape.natural","elementType":"geometry","stylers":[{"color":"#d0e3b4"}]},{"featureType":"landscape.natural.terrain","elementType":"geometry","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"poi.business","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"poi.medical","elementType":"geometry","stylers":[{"color":"#fbd3da"}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#bde6ab"}]},{"featureType":"road","elementType":"geometry.stroke","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffe15f"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#efd151"}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.local","elementType":"geometry.fill","stylers":[{"color":"black"}]},{"featureType":"transit.station.airport","elementType":"geometry.fill","stylers":[{"color":"#cfb2db"}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#a2daf2"}]}],
-			zoom: window.mapData.zoom,
-			maxZoom: window.mapData.zoom,
-			minZoom: window.mapData.zoom,
-			center: new google.maps.LatLng(window.mapData.latitude, window.mapData.longitude),
-			mapTypeId: google.maps.MapTypeId.ROADMAP
-		};
-
-		var map = new google.maps.Map(document.getElementById('map'), myOptions);
-
-		var marker = new google.maps.Marker({
-			map: map,
-			position: new google.maps.LatLng(window.mapData.latitude, window.mapData.longitude)
-		});
-
-		google.maps.event.addDomListener(window, 'resize', function() {
-			map.setCenter(myOptions.center);
-		});
-	}
-</script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key={{ site.google_maps_javascript_api_key }}&amp;callback=initMap"></script>

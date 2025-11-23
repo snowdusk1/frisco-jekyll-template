@@ -6,20 +6,24 @@ left_links:
   - name: Contact
     link: /contact/
 right_links:
-  - name:
-    link: https://facebook.com/cloudcannon
+  - name: Mastodon
+    link: https://mastodon.sdf.org/@snowdusk 
     new_window: true
-    social_icon: Facebook
-  - name:
-    link: https://twitter.com/cloudcannon
-    social_icon: Twitter
+    social_icon:
+  - name: Toobnix
+    link: https://twitter.com/cloudcannon 
+    social_icon:
     new_window: true
   - name:
-    link: https://youtube.com/c/cloudcannon
+    link: https://www.youtube.com/@garyg3 
     social_icon: YouTube
     new_window: true
+  - name: Pixelfed
+    link: https://pixelfed.sdf.org/snowdusk
+    social_icon:
+    new_window: true
   - name:
-    link: https://instagram.com/
+    link: https://instagram.com/ 
     social_icon: Instagram
     new_window: true
   - name:
