@@ -10,7 +10,7 @@
 
 		<link rel="apple-touch-icon" href="{{ site.baseurl }}/apple-touch-icon.png">
 		<link rel="icon" type="image/png" href="{{ site.baseurl }}/touch-icon.png" sizes="192x192">
-		<link rel="icon" type="image/png" href="{{ site.baseurl }}/images/siteicon.png">
+		<link rel="icon" type="image/png" href="{{ site.baseurl }}/images/logo/snowflake.png">
 
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300|Rubik:300">
 		<link rel="stylesheet" href="{{ site.baseurl }}/css/screen.css">
@@ -38,6 +38,11 @@
 				<p class="editor-link"><a style="display:inline;" href="cloudcannon:collections/_data/navigation.yml" class="btn"><strong>&#9998;</strong> Edit navigation</a></p>
 			</div>
 		</header>
+        {% if page.image_description %} 
+          <p class="image-attribution">
+              <i>{{ page.image_description }}</i> 
+          </p>
+       {% endif %}
 
 		{{ content }}
 

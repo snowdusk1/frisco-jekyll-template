@@ -152,6 +152,35 @@
 .pagination {
 	padding: 30px
 }
-.blog-hero img {
-  filter: brightness(50%); /* Reduces the image brightness by 50% */
+
+/* Standard Desktop Parallax Effect */
+.hero {
+    min-height: 50vh; 
+    background-attachment: fixed; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    /* ... other styles ... */
+}
+
+/* Disable background-attachment: fixed for mobile/small screens */
+@media screen and (max-width: 768px) {
+    .hero {
+        /* Set background-attachment back to its default value */
+        background-attachment: scroll !important; 
+        
+        /* Ensure the image is correctly centered and sized on mobile */
+        background-position: center center !important; 
+        background-size: cover !important;
+    }
+}
+
+.image-attribution {
+    position: absolute;
+    bottom: 10px; 
+    right: 15px; 
+    font-size: 0.8rem; /* Small font size */
+    color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    z-index: 15; 
+    margin: 0;
 }

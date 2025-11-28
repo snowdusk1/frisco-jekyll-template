@@ -23,7 +23,9 @@ author:
 social:
   name: Mastodon 
   links:
-    - https://github.com/CloudCannon/frisco-jekyll-template 
+    - https://mastodon.sdf.org/@snowdusk 
+
+favicon_ico: "/images/logo/snowflake.png"
 
 # -----
 # Build

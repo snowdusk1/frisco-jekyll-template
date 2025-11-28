@@ -2,7 +2,8 @@
 title: Home
 description: My home on the WWW 
 image: /images/bike_mika.jpg 
-bottom_image: https://unsplash.it/2000/1322?a=.png
+image_description: Riding our "charis" around Ibara, Okayama, Japan (2005)
+bottom_image: /images/izumo_taisha.jpg
 ---
 
 <section class="hero" style="background-image: url({% include relative-src.html src=page.image %})">
@@ -14,6 +15,11 @@ bottom_image: https://unsplash.it/2000/1322?a=.png
 		</div>
 	</div>
 	<div class="learn-more"><a href="#learn-more">More...<span class="arrow">&#x25BC;</span></a></div>
+    {% if page.image_description %} 
+      <p class="image-attribution">
+          <i>{{ page.image_description }}</i> 
+      </p>
+    {% endif %}
 </section>
 
 <div class="content">
@@ -52,14 +58,19 @@ bottom_image: https://unsplash.it/2000/1322?a=.png
 			</div>
 		</div>
 	</section>
-
-	<section class="hero" style="background-image: url({% include relative-src.html src=page.bottom_image %})">
-		<div class="inner-hero text-container">
-			<div class="hero-text-container">
-				<h2 class="editable">Some random photos</h2>
-				<p class="subtext editable">Not sure what to do with this section yet...</p>
-				<div class="cta button alt"><a href="/blog/">Next...</a></div>
-			</div>
-		</div>
-	</section>
 </div>
+
+<section class="hero" style="background-image: url({% include relative-src.html src=page.bottom_image %})">
+	<div class="inner-hero text-container">
+		<div class="hero-text-container">
+			<h2 class="editable">snowdusk</h2>
+			<p class="subtext editable">Where do you want to go today?</p>
+			<div class="cta button alt"><a href="/blog/">Next...</a></div>
+		</div>
+	</div>
+    {% if page.bottom_image_description %} 
+      <p class="image-attribution">
+          <i>{{ page.bottom_image_description }}</i> 
+      </p>
+    {% endif %}
+</section>

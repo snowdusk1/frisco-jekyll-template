@@ -9,6 +9,13 @@ layout: default
 			<p class="subtext">{{ page.description }}</p>
 		</div>
 	</div>
+
+  <{% if page.image_description %} 
+  <p class="image-attribution">
+      <i>{{ page.image_description }}</i> 
+  </p>
+  {% endif %}
+
 </section>
 
 {{ content }}

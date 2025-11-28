@@ -1,7 +1,8 @@
 ---
 title: Tags 
 description: Choose a topic... 
-image: /images/on_the_way_to_izumo.jpg
+image: /images/bunny_island.jpg
+image_description: Interacting with resident bunnies on Ōkunoshima (Bunny Island), Hiroshima, Japan (2009) 
 ---
 
 <section class="hero" style="background-image: url({% include relative-src.html src=page.image %})">
@@ -12,6 +13,11 @@ image: /images/on_the_way_to_izumo.jpg
 		</div>
 	</div>
 </section>
+{% if page.image_description %} 
+   <p class="image-attribution">
+       <i>{{ page.image_description }}</i> 
+   </p>
+{% endif %}
 
 <section class="pad">
 	<div class="container">

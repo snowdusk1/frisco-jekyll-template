@@ -1,19 +1,21 @@
 ---
-layout: default
+layout: default 
+image: /images/bunny_island.jpg
+image_description: Interacting with resident bunnies on Ōkunoshima (Bunny Island), Hiroshima, Japan (2009)
 ---
 
 <section class="hero" style="background-image: url(/images/bunny_island.jpg)">
 	<div class="inner-hero text-container">
 		<div class="hero-text-container">
-			<h1>The latest news</h1>
-			<p class="subtext">Hear the latest progress on Frisco and tips on making life long friends.</p>
+			<h1>Tags</h1>
+			<p class="subtext">Get organized...</p>
 		</div>
 	</div>
-</section>
-
+   
+   </section>
 <section>
 	<div class="text-container">
-        <p class="change-category">You're currently looking at a list of posts with the tag <strong>{{ page.title }}</strong>. <a href="{{ site.baseurl }}/blog/">View all posts</a> instead or <a href="/tags/">click here to view all tags</a>.</p>
+        <p class="change-category">You're currently looking at a list of posts with the tag <tt>{{ page.title }}</tt>. <a href="{{ site.baseurl }}/blog/">View all posts</a> instead or <a href="/tags/">click here to view all tags</a>.</p>
 
 		<ul class="blog-posts">
 			{% include list-posts.html posts=page.posts %}
