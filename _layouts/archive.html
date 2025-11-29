@@ -2,17 +2,19 @@
 layout: default 
 image: /images/bunny_island.jpg
 image_description: Interacting with resident bunnies on Ōkunoshima (Bunny Island), Hiroshima, Japan (2009)
+bottom_image: /images/setouchi.jpg
+bottom_image_description: Setouchi, Okayama, Japan (2009)
 ---
-
-<section class="hero" style="background-image: url(/images/bunny_island.jpg)">
+<section class="hero" style="background-image: url({% include relative-src.html src=page.image %})">
 	<div class="inner-hero text-container">
 		<div class="hero-text-container">
-			<h1>Tags</h1>
-			<p class="subtext">Get organized...</p>
-		</div>
+			<h1 class="editable">About</h1>
+			<p class="subtext editable">Self-intro</p>
+			<div class="cta button alt"><a href="/contact/">Next...</a></div>
+	    </div>
 	</div>
-   
-   </section>
+    <div class="learn-more"><a href="#learn-more">More...<span class="arrow">&#x25BC;</span></a></div>
+</section>
 <section>
 	<div class="text-container">
         <p class="change-category">You're currently looking at a list of posts with the tag <tt>{{ page.title }}</tt>. <a href="{{ site.baseurl }}/blog/">View all posts</a> instead or <a href="/tags/">click here to view all tags</a>.</p>
@@ -21,4 +23,18 @@ image_description: Interacting with resident bunnies on Ōkunoshima (Bunny Islan
 			{% include list-posts.html posts=page.posts %}
 		</ul>
 	</div>
+</section>
+<section class="hero" style="background-image: url({% include relative-src.html src=page.bottom_image %})">
+	<div class="inner-hero text-container">
+		<div class="hero-text-container">
+			<h2 class="editable">snowdusk</h2>
+			<p class="subtext editable">Where do you want to go today?</p>
+			<div class="cta button alt"><a href="/blog/">Next...</a></div>
+		</div>
+	</div>
+    {% if page.bottom_image_description %} 
+      <p class="image-attribution">
+          <i>{{ page.bottom_image_description }}</i> 
+      </p>
+    {% endif %}
 </section>

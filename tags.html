@@ -3,6 +3,8 @@ title: Tags
 description: Choose a topic... 
 image: /images/bunny_island.jpg
 image_description: Interacting with resident bunnies on Ōkunoshima (Bunny Island), Hiroshima, Japan (2009) 
+bottom_image: /images/rirakkuma.jpg
+bottom_image_description: Kiddy Land, Shibuya, Tokyo, Japan (2006)
 ---
 
 <section class="hero" style="background-image: url({% include relative-src.html src=page.image %})">
@@ -31,4 +33,18 @@ image_description: Interacting with resident bunnies on Ōkunoshima (Bunny Islan
 </span>
 {% endfor %} 
 	</div>
+</section>
+<section class="hero" style="background-image: url({% include relative-src.html src=page.bottom_image %})">
+	<div class="inner-hero text-container">
+		<div class="hero-text-container">
+			<h2 class="editable">snowdusk</h2>
+			<p class="subtext editable">Where do you want to go today?</p>
+			<div class="cta button alt"><a href="/blog/">Next...</a></div>
+		</div>
+	</div>
+    {% if page.bottom_image_description %} 
+      <p class="image-attribution">
+          <i>{{ page.bottom_image_description }}</i> 
+      </p>
+    {% endif %}
 </section>

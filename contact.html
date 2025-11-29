@@ -3,6 +3,8 @@ title: Contact
 description: Talk to me... 
 image: /images/enkai.jpg 
 image_description: Ibara City Board of Education's year-end party (enkai), Ibara, Okayama, Japan (2006)
+bottom_image: /images/tuna_melt.jpg
+bottom_image_description: Ibara International Festival, Ibara, Okayama, Japan (2008)
 ---
 
 <section class="hero" style="background-image: url({% include relative-src.html src=page.image %})">
@@ -54,4 +56,18 @@ image_description: Ibara City Board of Education's year-end party (enkai), Ibara
        </li>
       </ul>
   </div>
+</section>
+<section class="hero" style="background-image: url({% include relative-src.html src=page.bottom_image %})">
+	<div class="inner-hero text-container">
+		<div class="hero-text-container">
+			<h2 class="editable">snowdusk</h2>
+			<p class="subtext editable">Where do you want to go today?</p>
+			<div class="cta button alt"><a href="/blog/">Next...</a></div>
+		</div>
+	</div>
+    {% if page.bottom_image_description %} 
+      <p class="image-attribution">
+          <i>{{ page.bottom_image_description }}</i> 
+      </p>
+    {% endif %}
 </section>

@@ -3,6 +3,8 @@ title: Archive
 description: This is history... 
 image: /images/shizuoka_tanuki.jpeg
 image_description: With statues of tanuki at a restaurant in Ito, Shizuoka, Japan (2009) 
+bottom_image: /images/ocean_expo_park_okinawa.jpg
+bottom_image_description: Ocean Expo Park, Okinawa, Japan (2008)
 ---
 
 <section class="hero" style="background-image: url({% include relative-src.html src=page.image %})">
@@ -29,4 +31,18 @@ image_description: With statues of tanuki at a restaurant in Ito, Shizuoka, Japa
 				<li><a href="/old/archive/pre_2010_02.html">June 2000 to February 2010</a></li>
 		</p>
 	</div>
+</section>
+<section class="hero" style="background-image: url({% include relative-src.html src=page.bottom_image %})">
+	<div class="inner-hero text-container">
+		<div class="hero-text-container">
+			<h2 class="editable">snowdusk</h2>
+			<p class="subtext editable">Where do you want to go today?</p>
+			<div class="cta button alt"><a href="/blog/">Next...</a></div>
+		</div>
+	</div>
+    {% if page.bottom_image_description %} 
+      <p class="image-attribution">
+          <i>{{ page.bottom_image_description }}</i> 
+      </p>
+    {% endif %}
 </section>
