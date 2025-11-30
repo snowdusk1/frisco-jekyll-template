@@ -1,19 +1,39 @@
 ---
-layout: page
+layout: default
 ---
 
+{% comment %} ----------------------------------- {% endcomment %}
+{% comment %} 1. TOP HERO SECTION (Missing from your provided code) {% endcomment %}
+{% comment %} ----------------------------------- {% endcomment %}
+
+<section class="hero" style="background-image: url({% include relative-src.html src=page.image %})">
+	<div class="inner-hero text-container">
+		<div class="hero-text-container">
+			<h1>{{ page.title }}</h1>
+			<p class="subtext">{{ page.description }}</p>
+		</div>
+	</div>
+    <div class="learn-more"><a href="#learn-more">More...<span class="arrow">&#x25BC;</span></a></div>
+    {% if page.image_description %} 
+      <p class="image-attribution">
+          <i>{{ page.image_description }}</i> 
+      </p>
+    {% endif %}
+</section>
+
+
+{% comment %} ----------------------------------- {% endcomment %}
+{% comment %} 2. MAIN CONTENT SECTION (Anchor for #learn-more) {% endcomment %}
+{% comment %} ----------------------------------- {% endcomment %}
+
 <section id="learn-more">
-    <br>
-    <br>
-    <br>
-    <br>
-	<div class="blog-post text-container">
+    <div class="blog-post text-container">
 		<p class="editor-link"><a href="cloudcannon:collections/{{ page.path }}" class="btn"><strong>&#9998;</strong> Edit Post</a></p>
 		{% include post-title.html post=page %}
 
 		<div class="post-content">
 			{{ content }}
-
+            {% comment %} Your existing code for author, navigation, and disqus follows here {% endcomment %}
 			<div class="author">
 				{% assign author_id = page.author_staff_member | prepend: "/staff_members/" | append: "/" %}
 				{% assign author = site.staff_members | where: "url", author_id | first %}
@@ -30,7 +50,6 @@ layout: page
 				{% endif %}
 			</div>
 
-
 			{% if site.disqus_shortname and page.comments %}
 				<div id="disqus_thread"></div>
 				<script>
@@ -40,7 +59,7 @@ layout: page
 								this.page.identifier = "{{ page.id }}";
 						};
 
-						(function() {  // DON'T EDIT BELOW THIS LINE
+						(function() {  // DON'T EDIT BELOW THIS LINE
 								var d = document, s = d.createElement('script');
 
 								s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
@@ -53,4 +72,20 @@ layout: page
 			{% endif %}
 		</div>
 	</div>
+</section>
+
+{% comment %} ----------------------------------- {% endcomment %}
+{% comment %} 3. BOTTOM RANDOM HERO SECTION {% endcomment %}
+{% comment %} ----------------------------------- {% endcomment %}
+<section class="hero" id="bottom-hero-js-target">
+    <div class="inner-hero text-container">
+		<div class="hero-text-container">
+            <h2 class="editable">{{ page.title }}</h2>
+            <p class="subtext editable">{{ page.description }}</p>
+			<div class="cta button alt"><a href="/intergalactic/">Next...</a></div>
+		</div>
+	</div>
+    <p class="image-attribution">
+        <i></i>
+    </p>
 </section>

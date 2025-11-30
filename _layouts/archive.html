@@ -1,12 +1,12 @@
 ---
-layout: default
+layout: page 
 ---
 <section class="hero" style="background-image: url(/images/bunny_island.jpg">
 	<div class="inner-hero text-container">
 		<div class="hero-text-container">
             <h1 class="editable">#{{ page.title }}</h1>
-			<p class="subtext editable">Get tagged...</p>
-			<div class="cta button alt"><a href="/">Go back to home page</a></div>
+            <p class="subtext editable">{{ page.description }}</p>
+			<div class="cta button alt"><a href="/blog/">Go back to the blog</a></div>
 	    </div>
 	</div>
     <div class="learn-more"><a href="#learn-more">More...<span class="arrow">&#x25BC;</span></a></div>
@@ -26,15 +26,15 @@ layout: default
 		</ul>
 	</div>
 </section>
-<section class="hero" style="background-image: url(/images/setouchi.jpg">
-	<div class="inner-hero text-container">
+<section class="hero" id="bottom-hero-js-target">
+    <div class="inner-hero text-container">
 		<div class="hero-text-container">
-			<h2 class="editable">snowdusk</h2>
-			<p class="subtext editable">Where do you want to go today?</p>
-			<div class="cta button alt"><a href="/">Go back to home page</a></div>
+            <h2 class="editable">#{{ page.title }}</h2>
+            <p class="subtext editable">{{ page.description }}</p>
+			<div class="cta button alt"><a href="/blog/">Go back to the blog</a></div>
 		</div>
 	</div>
-      <p class="image-attribution">
-          <i>Setouchi, Okayama, Japan (2009)</i> 
-      </p>
+    <p class="image-attribution">
+        <i></i>
+    </p>
 </section>

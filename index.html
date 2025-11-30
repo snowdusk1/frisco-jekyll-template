@@ -3,15 +3,13 @@ title: Home
 description: My home on the WWW 
 image: /images/bike_mika.jpg 
 image_description: Riding our "charis" around Ibara, Okayama, Japan (2005)
-bottom_image: /images/izumo_taisha.jpg
-bottom_image_description: Izumo Taisha, Izumo, Shimane, Japan (2009)
 ---
 
 <section class="hero" style="background-image: url({% include relative-src.html src=page.image %})">
 	<div class="inner-hero text-container">
 		<div class="hero-text-container">
-			<h1 class="editable">snowdusk</h1>
-			<p class="subtext editable">My home on the WWW</p>
+            <h1 class="editable">{{ page.title }}</h1>
+            <p class="subtext editable">{{ page.description }}</p>
 			<div class="cta button alt"><a href="/blog/">Next...</a></div>
 		</div>
 	</div>
@@ -60,18 +58,15 @@ bottom_image_description: Izumo Taisha, Izumo, Shimane, Japan (2009)
 		</div>
 	</section>
 </div>
-
-<section class="hero" style="background-image: url({% include relative-src.html src=page.bottom_image %})">
-	<div class="inner-hero text-container">
+<section class="hero" id="bottom-hero-js-target">
+    <div class="inner-hero text-container">
 		<div class="hero-text-container">
-			<h2 class="editable">snowdusk</h2>
-			<p class="subtext editable">Where do you want to go today?</p>
+            <h2 class="editable">{{ page.title }}</h2>
+            <p class="subtext editable">{{ page.description }}</p>
 			<div class="cta button alt"><a href="/blog/">Next...</a></div>
 		</div>
 	</div>
-    {% if page.bottom_image_description %} 
-      <p class="image-attribution">
-          <i>{{ page.bottom_image_description }}</i> 
-      </p>
-    {% endif %}
+    <p class="image-attribution">
+        <i></i>
+    </p>
 </section>

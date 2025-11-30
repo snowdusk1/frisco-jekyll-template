@@ -3,15 +3,12 @@ title: Contact
 description: Talk to me... 
 image: /images/enkai.jpg 
 image_description: Ibara City Board of Education's year-end party (enkai), Ibara, Okayama, Japan (2006)
-bottom_image: /images/tuna_melt.jpg
-bottom_image_description: Ibara International Festival, Ibara, Okayama, Japan (2008)
 ---
-
 <section class="hero" style="background-image: url({% include relative-src.html src=page.image %})">
 	<div class="inner-hero text-container">
 		<div class="hero-text-container">
-			<h1 class="editable">Contact</h1>
-			<p class="subtext editable">Talk to me... please</p>
+            <h1 class="editable">{{ page.title}}</h1>
+            <p class="subtext editable">{{ page.description }}</p>
 			<div class="cta button alt"><a href="/search/">Next...</a></div>
 		</div>
 	</div>
@@ -22,6 +19,7 @@ bottom_image_description: Ibara International Festival, Ibara, Okayama, Japan (2
       </p>
     {% endif %}
 </section>
+
 
 <section class="pad" id="learn-more">
   <div class="container">
@@ -62,17 +60,15 @@ bottom_image_description: Ibara International Festival, Ibara, Okayama, Japan (2
       </ul>
   </div>
 </section>
-<section class="hero" style="background-image: url({% include relative-src.html src=page.bottom_image %})">
-	<div class="inner-hero text-container">
+<section class="hero" id="bottom-hero-js-target">
+    <div class="inner-hero text-container">
 		<div class="hero-text-container">
-			<h2 class="editable">snowdusk</h2>
-			<p class="subtext editable">Where do you want to go today?</p>
+            <h2 class="editable">{{ page.title }}</h2>
+            <p class="subtext editable">{{ page.description }}</p>
 			<div class="cta button alt"><a href="/search/">Next...</a></div>
 		</div>
 	</div>
-    {% if page.bottom_image_description %} 
-      <p class="image-attribution">
-          <i>{{ page.bottom_image_description }}</i> 
-      </p>
-    {% endif %}
+    <p class="image-attribution">
+        <i></i>
+    </p>
 </section>

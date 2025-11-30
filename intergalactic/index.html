@@ -1,17 +1,15 @@
 ---
 title: Intergalactic Wasabi Mix 
-description: Intergalactic Wasabi Mix 
+description: My live Internet radio show on aNONradio.net 
 image: /images/cdjs.jpg 
 image_description: Pioneer CDJ-350W x2 and DJM-350W
-bottom_image: /images/studio.jpg
-bottom_image_description: My "studio"
 ---
 
 <section class="hero" style="background-image: url({% include relative-src.html src=page.image %})">
 	<div class="inner-hero text-container">
 		<div class="hero-text-container">
-			<h1 class="editable">Intergalactic Wasabi Mix</h1>
-			<p class="subtext editable">My Internet Radio Show On aNONradio.net</p>
+            <h1 class="editable">{{ page.title }}</h1>
+            <p class="subtext editable">{{ page.description }}</p>
 			<div class="cta button alt"><a href="/about/">Next...</a></div>
 		</div>
 	</div>
@@ -39,18 +37,15 @@ bottom_image_description: My "studio"
 	</div>
 </section>
 </div>
-
-<section class="hero" style="background-image: url({% include relative-src.html src=page.bottom_image %})">
-	<div class="inner-hero text-container">
+<section class="hero" id="bottom-hero-js-target">
+    <div class="inner-hero text-container">
 		<div class="hero-text-container">
-			<h2 class="editable">snowdusk</h2>
-			<p class="subtext editable">Where do you want to go today?</p>
+            <h2 class="editable">{{ page.title }}</h2>
+            <p class="subtext editable">{{ page.description }}</p>
 			<div class="cta button alt"><a href="/about/">Next...</a></div>
 		</div>
 	</div>
-    {% if page.bottom_image_description %} 
-      <p class="image-attribution">
-          <i>{{ page.bottom_image_description }}</i> 
-      </p>
-    {% endif %}
+    <p class="image-attribution">
+        <i></i>
+    </p>
 </section>

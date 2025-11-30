@@ -2,34 +2,4 @@
 layout: default
 ---
 
-<section class="hero" style="background-image: url({% include relative-src.html src=page.image %})">
-	<div class="inner-hero text-container">
-		<div class="hero-text-container">
-			<h1>{{ page.title }}</h1>
-			<p class="subtext">{{ page.description }}</p>
-		</div>
-	</div>
-    <div class="learn-more"><a href="#learn-more">More...<span class="arrow">&#x25BC;</span></a></div>
-    {% if page.image_description %} 
-      <p class="image-attribution">
-          <i>{{ page.image_description }}</i> 
-      </p>
-    {% endif %}
-</section>
-
 {{ content }}
-
-<section class="hero" style="background-image: url({% include relative-src.html src=page.bottom_image %})">
-	<div class="inner-hero text-container">
-		<div class="hero-text-container">
-			<h2 class="editable">snowdusk</h2>
-			<p class="subtext editable">Where do you want to go today?</p>
-			<div class="cta button alt"><a href="/">Go back to the home page</a></div>
-		</div>
-	</div>
-    {% if page.bottom_image_description %} 
-      <p class="image-attribution">
-          <i>{{ page.bottom_image_description }}</i> 
-      </p>
-    {% endif %}
-</section>

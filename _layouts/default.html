@@ -38,10 +38,16 @@
 				<p class="editor-link"><a style="display:inline;" href="cloudcannon:collections/_data/navigation.yml" class="btn"><strong>&#9998;</strong> Edit navigation</a></p>
 			</div>
 		</header>
+{{ content }}
 
-		{{ content }}
+        {% comment %} 
+            INCLUDE THE CONSOLIDATED RANDOMIZATION SCRIPT ONCE - Place it right after {{ content }}
+            This ensures the script is available to target the bottom hero structure 
+            which is placed inside _layouts/page.html content.
+        {% endcomment %}
+        {% include random_hero_logic.html %}
 
-		<footer>
+        <footer>
 			<div class="container">
 				<p class="editor-link"><a href="cloudcannon:collections/_data/footer.yml" class="btn"><strong>&#9998;</strong> Edit footer</a></p>
 				<ul class="footer-left-links">
@@ -71,8 +77,14 @@
 				</p>
 			</div>
 		</footer>
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-		<script src="{{ site.baseurl }}/js/main.js"></script>
-        {% include js_super-search.html %}
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="{{ site.baseurl }}/js/main.js"></script>
+{% include js_super-search.html %}
+<script>
+    superSearch({
+        searchFile: '/feed.xml',
+    });
+</script>
 	</body>
 </html>

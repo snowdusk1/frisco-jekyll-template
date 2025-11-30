@@ -3,8 +3,6 @@ title: Blog
 description: What's happenin'... 
 image: /images/tottori_sand_dune.jpg 
 image_description: Tottori Sand Dune, Tottori, Japan (2009)
-bottom_image: /images/having_fun_under_sakura_tree.jpg
-bottom_image_description: Wacky moments with co-worker's kids under a cherry blossom tree, Ibara, Okayama, Japan (2010)
 ---
 
 <section class="hero" style="background-image: url({% include relative-src.html src=page.image %})">
@@ -44,17 +42,15 @@ bottom_image_description: Wacky moments with co-worker's kids under a cherry blo
 		{% endif %}
 	</div>
 </section>
-<section class="hero" style="background-image: url({% include relative-src.html src=page.bottom_image %})">
-	<div class="inner-hero text-container">
+<section class="hero" id="bottom-hero-js-target">
+    <div class="inner-hero text-container">
 		<div class="hero-text-container">
-			<h2 class="editable">snowdusk</h2>
-			<p class="subtext editable">Where do you want to go today?</p>
+            <h2 class="editable">{{ page.title }}</h2>
+            <p class="subtext editable">{{ page.description }}</p>
 			<div class="cta button alt"><a href="/intergalactic/">Next...</a></div>
 		</div>
 	</div>
-    {% if page.bottom_image_description %} 
-      <p class="image-attribution">
-          <i>{{ page.bottom_image_description }}</i> 
-      </p>
-    {% endif %}
+    <p class="image-attribution">
+        <i></i>
+    </p>
 </section>

@@ -1,22 +1,26 @@
 ---
-layout: default
 title: Tags 
 description: Choose a topic... 
 image: /images/shark.jpg
 image_description: Osaka Aquarium Kaiyukan, Osaka, Japan (2010) 
-bottom_image: /images/rirakkuma.jpg
-bottom_image_description: Kiddy Land, Shibuya, Tokyo, Japan (2006)
 ---
-
 <section class="hero" style="background-image: url({% include relative-src.html src=page.image %})">
 	<div class="inner-hero text-container">
 		<div class="hero-text-container">
-			<h1 class="editable">Tags</h1>
-			<p class="subtext editable">Choose a topic...</p>
+            <h1 class="editable">{{ page.title}}</h1>
+            <p class="subtext editable">{{ page.description }}</p>
+			<div class="cta button alt"><a href="/blog/">Go back to the blog</a></div>
 		</div>
 	</div>
-    <div class="learn-more"><a href="#learn-more">More...<span class="arrow">&#x25BC;</span></a></div>
+	<div class="learn-more"><a href="#learn-more">More...<span class="arrow">&#x25BC;</span></a></div>
+    {% if page.image_description %} 
+      <p class="image-attribution">
+          <i>{{ page.image_description }}</i> 
+      </p>
+    {% endif %}
 </section>
+
+
 {% if page.image_description %} 
    <p class="image-attribution">
        <i>{{ page.image_description }}</i> 
@@ -38,17 +42,15 @@ bottom_image_description: Kiddy Land, Shibuya, Tokyo, Japan (2006)
         </p>
 	</div>
 </section>
-<section class="hero" style="background-image: url({% include relative-src.html src=page.bottom_image %})">
-	<div class="inner-hero text-container">
+<section class="hero" id="bottom-hero-js-target">
+    <div class="inner-hero text-container">
 		<div class="hero-text-container">
-			<h2 class="editable">snowdusk</h2>
-			<p class="subtext editable">Where do you want to go today?</p>
-			<div class="cta button alt"><a href="/blog/">Next...</a></div>
+            <h2 class="editable">{{ page.title }}</h2>
+            <p class="subtext editable">{{ page.description }}</p>
+			<div class="cta button alt"><a href="/blog">Go back to the blog</a></div>
 		</div>
 	</div>
-    {% if page.bottom_image_description %} 
-      <p class="image-attribution">
-          <i>{{ page.bottom_image_description }}</i> 
-      </p>
-    {% endif %}
+    <p class="image-attribution">
+        <i></i>
+    </p>
 </section>

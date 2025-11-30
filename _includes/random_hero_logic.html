@@ -1,0 +1,69 @@
+{% comment %}
+    _includes/random_hero_logic.html - CONSOLIDATED SCRIPT (Bottom Hero Only)
+    
+    This script defines the data array once and runs the randomization 
+    logic only for the bottom target: #bottom-hero-js-target.
+{% endcomment %}
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+
+    // 1. STATIC DATA INJECTION (Data array)
+    const heroData = [
+        {"path": "/images/bottom_hero_images/20080901_nishiebarasho.jpg", "description": "Nishiebarasho Elementary School"},
+        {"path": "/images/bottom_hero_images/cdj_wedding.jpg", "description": "CDJ Wedding"},
+        {"path": "/images/bottom_hero_images/chuzenjiko.jpeg", "description": "Lake Chuzenji, Tochigi"},
+        {"path": "/images/bottom_hero_images/fujiyama_shizuoka.jpeg", "description": "Mt. Fuji from Shizuoka"},
+        {"path": "/images/bottom_hero_images/fukuyama_natsu_matsuri.jpeg", "description": "Fukuyama Summer Festival"},
+        {"path": "/images/bottom_hero_images/fukuyama_shimenawa.jpeg", "description": "Shimenawa, Fukuyama"},
+        {"path": "/images/bottom_hero_images/having_fun_under_sakura_tree.jpg", "description": "Sakura Tree Fun"},
+        {"path": "/images/bottom_hero_images/hiroshima_baseball.jpeg", "description": "Hiroshima Baseball"},
+        {"path": "/images/bottom_hero_images/ibara_intl_fest_with_students.jpeg", "description": "Ibara International Festival"},
+        {"path": "/images/bottom_hero_images/izumo_taisha.jpg", "description": "Izumo Taisha"},
+        {"path": "/images/bottom_hero_images/kagoshima_2005.jpeg", "description": "Kagoshima 2005"},
+        {"path": "/images/bottom_hero_images/kataoka_sakura.jpeg", "description": "Kataoka Sakura"},
+        {"path": "/images/bottom_hero_images/kibitsuhiko.jpeg", "description": "Kibitsuhiko Shrine"},
+        {"path": "/images/bottom_hero_images/kinoko_chu_san_nensei.jpeg", "description": "Kinoko Chu San Nensei"},
+        {"path": "/images/bottom_hero_images/kinoko_yochien_2007.jpeg", "description": "Kinoko Yochien 2007"},
+        {"path": "/images/bottom_hero_images/kinokosho_2007.jpeg", "description": "Kinokosho 2007"},
+        {"path": "/images/bottom_hero_images/mds.jpg", "description": "MDS"},
+        {"path": "/images/bottom_hero_images/momo_dj.jpeg", "description": "Momo DJ"},
+        {"path": "/images/bottom_hero_images/momo_macintosh.jpeg", "description": "Momo Macintosh"},
+        {"path": "/images/bottom_hero_images/nikko_nat_park_tochigi.jpg", "description": "Nikko National Park"},
+        {"path": "/images/bottom_hero_images/ocean_expo_park_okinawa.jpg", "description": "Ocean Expo Park, Okinawa"},
+        {"path": "/images/bottom_hero_images/okayama_choir.jpeg", "description": "Okayama Choir"},
+        {"path": "/images/bottom_hero_images/on_the_way_to_hiroshima_city.jpeg", "description": "On the way to Hiroshima City"},
+        {"path": "/images/bottom_hero_images/on_the_way_to_izumo_no_mask.jpg", "description": "On the way to Izumo"},
+        {"path": "/images/bottom_hero_images/pat_mac.jpeg", "description": "Pat Mac"},
+        {"path": "/images/bottom_hero_images/rirakkuma.jpg", "description": "Rirakkuma"},
+        {"path": "/images/bottom_hero_images/sapporo_2006.jpeg", "description": "Sapporo 2006"},
+        {"path": "/images/bottom_hero_images/setouchi.jpg", "description": "Setouchi"},
+        {"path": "/images/bottom_hero_images/shark.jpg", "description": "Shark"},
+        {"path": "/images/bottom_hero_images/shinkansen.jpg", "description": "Shinkansen"},
+        {"path": "/images/bottom_hero_images/shiraishijima.jpeg", "description": "Shiraishijima"},
+        {"path": "/images/bottom_hero_images/tokyo_disneyland_2006.jpeg", "description": "Tokyo Disneyland 2006"},
+        {"path": "/images/bottom_hero_images/tokyo_purikura.jpeg", "description": "Tokyo Purikura"},
+        {"path": "/images/bottom_hero_images/tuna_melt.jpg", "description": "Tuna Melt"}
+    ];
+
+    // 2. Select random image
+    if (!heroData || heroData.length === 0) return;
+    
+    const randomIndex = Math.floor(Math.random() * heroData.length);
+    const randomItem = heroData[randomIndex];
+
+    // 3. Target and apply to the bottom hero
+    const heroSection = document.getElementById('bottom-hero-js-target');
+    
+    // Crucial check: only run if the target section is present (which it is on 'page' layout)
+    if (heroSection) {
+        const attribution = heroSection.querySelector('.image-attribution i');
+
+        // Apply background and attribution
+        heroSection.style.backgroundImage = `url(${randomItem.path})`;
+        if (attribution && randomItem.description) {
+            attribution.textContent = randomItem.description;
+        }
+    }
+});
+</script>

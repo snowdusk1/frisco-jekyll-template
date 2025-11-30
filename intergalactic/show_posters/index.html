@@ -1,19 +1,26 @@
 ---
 title: Show Posters 
-description: Show Posters 
+description: Some show eye candy stuff
 image: /images/igwm-poster-old-dark.jpg 
+image_description: poster
 ---
 
 <section class="hero" style="background-image: url({% include relative-src.html src=page.image %})">
 	<div class="inner-hero text-container">
 		<div class="hero-text-container">
-			<h1 class="editable">Show Posters</h1>
-			<p class="subtext editable">Some show eye candy stuff</p>
+            <h1 class="editable">{{ page.title}}</h1>
+            <p class="subtext editable">{{ page.description }}</p>
+			<div class="cta button alt"><a href="/about/">Next...</a></div>
 		</div>
 	</div>
+	<div class="learn-more"><a href="#learn-more">More...<span class="arrow">&#x25BC;</span></a></div>
+    {% if page.image_description %} 
+      <p class="image-attribution">
+          <i>{{ page.image_description }}</i> 
+      </p>
+    {% endif %}
 </section>
-
-<section class="pad">
+<section class="pad" id="learn-more">
 	<div class="container">
 		<p>
 			<img src="/images/igwm_poster_20231221_600.jpg"><br>
@@ -135,4 +142,16 @@ image: /images/igwm-poster-old-dark.jpg
 		  <a href="/old/intergalactic/files/igwm_poster_phonemasks_640.jpg">Download larger version (87KB)</a>
 		</p>
   </div>
+</section>
+<section class="hero" id="bottom-hero-js-target">
+    <div class="inner-hero text-container">
+		<div class="hero-text-container">
+            <h2 class="editable">{{ page.title }}</h2>
+            <p class="subtext editable">{{ page.description }}</p>
+			<div class="cta button alt"><a href="/about/">Next...</a></div>
+		</div>
+	</div>
+    <p class="image-attribution">
+        <i></i>
+    </p>
 </section>
