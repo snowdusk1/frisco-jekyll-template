@@ -4,7 +4,8 @@ date: -0500
 tag:
   -
 image: /images/
-image_description_top:
+image_description:
+bottom_image:
 author_staff_member: snowdusk
 ---
 <!--more-->

@@ -7,6 +7,8 @@ tag:
   - rave 
 image: /images/frankie_bones_20251011.jpg
 image_description: Frankie Bones
+bottom_image: /images/okayama_choir.jpeg
+bottom_image_description: Singing performance with a choir in Okayama City, Okayama, Japan (2009)
 author_staff_member: snowdusk
 ---
 <!--more-->

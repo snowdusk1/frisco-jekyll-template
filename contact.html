@@ -16,6 +16,11 @@ bottom_image_description: Ibara International Festival, Ibara, Okayama, Japan (2
 		</div>
 	</div>
 	<div class="learn-more"><a href="#learn-more">More...<span class="arrow">&#x25BC;</span></a></div>
+    {% if page.image_description %} 
+      <p class="image-attribution">
+          <i>{{ page.image_description }}</i> 
+      </p>
+    {% endif %}
 </section>
 
 <section class="pad" id="learn-more">
@@ -62,7 +67,7 @@ bottom_image_description: Ibara International Festival, Ibara, Okayama, Japan (2
 		<div class="hero-text-container">
 			<h2 class="editable">snowdusk</h2>
 			<p class="subtext editable">Where do you want to go today?</p>
-			<div class="cta button alt"><a href="/blog/">Next...</a></div>
+			<div class="cta button alt"><a href="/search/">Next...</a></div>
 		</div>
 	</div>
     {% if page.bottom_image_description %} 

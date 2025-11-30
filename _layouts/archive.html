@@ -1,22 +1,24 @@
 ---
-layout: default 
-image: /images/bunny_island.jpg
-image_description: Interacting with resident bunnies on Ōkunoshima (Bunny Island), Hiroshima, Japan (2009)
-bottom_image: /images/setouchi.jpg
-bottom_image_description: Setouchi, Okayama, Japan (2009)
+layout: default
 ---
-<section class="hero" style="background-image: url({% include relative-src.html src=page.image %})">
+<section class="hero" style="background-image: url(/images/bunny_island.jpg">
 	<div class="inner-hero text-container">
 		<div class="hero-text-container">
-			<h1 class="editable">About</h1>
-			<p class="subtext editable">Self-intro</p>
-			<div class="cta button alt"><a href="/contact/">Next...</a></div>
+            <h1 class="editable">#{{ page.title }}</h1>
+			<p class="subtext editable">Get tagged...</p>
+			<div class="cta button alt"><a href="/">Go back to home page</a></div>
 	    </div>
 	</div>
     <div class="learn-more"><a href="#learn-more">More...<span class="arrow">&#x25BC;</span></a></div>
+      <p class="image-attribution">
+          <i>Interacting with resident bunnies on Ōkunoshima (Bunny Island), Hiroshima, Japan (2009)</i> 
+      </p>
 </section>
 <section>
-	<div class="text-container">
+	<div class="text-container" id="learn-more">
+        <br>
+        <br>
+        <br>
         <p class="change-category">You're currently looking at a list of posts with the tag <tt>{{ page.title }}</tt>. <a href="{{ site.baseurl }}/blog/">View all posts</a> instead or <a href="/tags/">click here to view all tags</a>.</p>
 
 		<ul class="blog-posts">
@@ -24,17 +26,15 @@ bottom_image_description: Setouchi, Okayama, Japan (2009)
 		</ul>
 	</div>
 </section>
-<section class="hero" style="background-image: url({% include relative-src.html src=page.bottom_image %})">
+<section class="hero" style="background-image: url(/images/setouchi.jpg">
 	<div class="inner-hero text-container">
 		<div class="hero-text-container">
 			<h2 class="editable">snowdusk</h2>
 			<p class="subtext editable">Where do you want to go today?</p>
-			<div class="cta button alt"><a href="/blog/">Next...</a></div>
+			<div class="cta button alt"><a href="/">Go back to home page</a></div>
 		</div>
 	</div>
-    {% if page.bottom_image_description %} 
       <p class="image-attribution">
-          <i>{{ page.bottom_image_description }}</i> 
+          <i>Setouchi, Okayama, Japan (2009)</i> 
       </p>
-    {% endif %}
 </section>

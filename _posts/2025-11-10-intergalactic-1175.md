@@ -7,6 +7,7 @@ tag:
   - bassmusic
 image: /images/sync24_20251025.jpg
 image_description: Sync 24
+bottom_image: /images/kataoka_sakura.jpeg
 author_staff_member: snowdusk
 ---
 <!--more-->

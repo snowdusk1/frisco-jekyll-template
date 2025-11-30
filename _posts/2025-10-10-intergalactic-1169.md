@@ -8,7 +8,9 @@ tag:
   - rave
 image: /images/digital_boy_20251004.jpg
 image_description: Digital Boy
-author_staff_member: snowdusk
+bottom_image: /images/ibara_intl_fest_with_students.jpeg
+bottom_image_description: With my students at the Ibara International Festival, Ibara, Okayama, Japan (2008)
+gauthor_staff_member: snowdusk
 ---
 <!--more-->
 

@@ -1,8 +1,9 @@
 ---
+layout: default
 title: Tags 
 description: Choose a topic... 
-image: /images/bunny_island.jpg
-image_description: Interacting with resident bunnies on Ōkunoshima (Bunny Island), Hiroshima, Japan (2009) 
+image: /images/shark.jpg
+image_description: Osaka Aquarium Kaiyukan, Osaka, Japan (2010) 
 bottom_image: /images/rirakkuma.jpg
 bottom_image_description: Kiddy Land, Shibuya, Tokyo, Japan (2006)
 ---
@@ -14,15 +15,17 @@ bottom_image_description: Kiddy Land, Shibuya, Tokyo, Japan (2006)
 			<p class="subtext editable">Choose a topic...</p>
 		</div>
 	</div>
+    <div class="learn-more"><a href="#learn-more">More...<span class="arrow">&#x25BC;</span></a></div>
 </section>
 {% if page.image_description %} 
    <p class="image-attribution">
        <i>{{ page.image_description }}</i> 
    </p>
 {% endif %}
-
-<section class="pad">
+<section class="pad" id="learn-more">
 	<div class="container">
+        <h1>Click a tag...</h1>
+        <p>
 {% assign tags = site.tags | sort %}
 {% for tag in tags %}
  <span class="site-tag">
@@ -32,6 +35,7 @@ bottom_image_description: Kiddy Land, Shibuya, Tokyo, Japan (2006)
     </a>
 </span>
 {% endfor %} 
+        </p>
 	</div>
 </section>
 <section class="hero" style="background-image: url({% include relative-src.html src=page.bottom_image %})">

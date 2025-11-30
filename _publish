@@ -1,0 +1,39 @@
+#!/bin/bash
+
+# Define the base directory once for readability and to prevent typos
+JEKYLL_DIR="/Users/gary/jekyll/frisco-jekyll-template"
+REMOTE_DEST="snowdusk@ma.sdf.org:/meta/www/s/snowdusk/"
+
+echo "--- Starting Jekyll Build and Deployment ---"
+
+# 1. Build the Jekyll site
+echo "1. Running Jekyll build..."
+bundle exec jekyll build "$JEKYLL_DIR"
+
+# Check if the build command succeeded (Exit code 0)
+if [ $? -eq 0 ]; then
+    echo "Jekyll build succeeded."
+
+    # 2. Change permissions on the built files
+    echo "2. Setting permissions (chmod 755)..."
+    chmod -R 755 "$JEKYLL_DIR/_site/"
+    
+    # Check if chmod command succeeded
+    if [ $? -eq 0 ]; then
+        echo "Permissions set successfully."
+        
+        # 3. Transfer the files to the remote server using rsync
+        echo "3. Starting rsync deployment..."
+        rsync -avz "$JEKYLL_DIR/_site/"* "$REMOTE_DEST"
+        
+        if [ $? -eq 0 ]; then
+            echo "--- Deployment Complete! ---"
+        else
+            echo "--- ERROR: Rsync failed. Check connection or remote path. ---"
+        fi
+    else
+        echo "--- ERROR: Chmod failed. Check directory path and permissions. ---"
+    fi
+else
+    echo "--- ERROR: Jekyll build failed. Fix build errors before continuing. ---"
+fi

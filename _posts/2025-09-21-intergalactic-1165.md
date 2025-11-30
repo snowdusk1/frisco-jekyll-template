@@ -1,10 +1,12 @@
 ---
 title: Intergalactic - 1165 - 2025/09/20
-date: 2025/09/21 -0400
+date: 2025/09/21 21:26 -0400
 tag:
   - house
 image: /images/dave_lee_20250921.jpg
 image_description: Dave Lee
+bottom_image: /images/fujiyama_shizuoka.jpeg
+bottom_image_description: View of Mt. Fuji from Kannami, Shizuoka, Japan (2009)
 author_staff_member: snowdusk
 ---
 <!--more-->

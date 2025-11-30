@@ -6,6 +6,7 @@ tag:
   - electro
 image: /images/drexciya_20251109.jpg
 image_description:
+bottom_image: /images/tokyo_purikura.jpeg
 author_staff_member: snowdusk
 ---
 <!--more-->

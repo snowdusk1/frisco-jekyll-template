@@ -1,5 +1,5 @@
 ---
-title: Archive
+title: Past 
 description: This is history... 
 image: /images/shizuoka_tanuki.jpeg
 image_description: With statues of tanuki at a restaurant in Ito, Shizuoka, Japan (2009) 
@@ -10,12 +10,17 @@ bottom_image_description: Ocean Expo Park, Okinawa, Japan (2008)
 <section class="hero" style="background-image: url({% include relative-src.html src=page.image %})">
 	<div class="inner-hero text-container">
 		<div class="hero-text-container">
-			<h1 class="editable">Archive</h1>
+			<h1 class="editable">Past</h1>
 			<p class="subtext editable">This is history...</p>
 			<div class="cta button alt"><a href="/">Back to the home page...</a></div>
 		</div>
 	    <div class="learn-more"><a href="#learn-more">More...<span class="arrow">&#x25BC;</span></a></div>
 	</div>
+    {% if page.image_description %} 
+      <p class="image-attribution">
+          <i>{{ page.image_description }}</i> 
+      </p>
+    {% endif %}
 </section>
 
 <section class="pad" id="learn-more">
@@ -37,7 +42,7 @@ bottom_image_description: Ocean Expo Park, Okinawa, Japan (2008)
 		<div class="hero-text-container">
 			<h2 class="editable">snowdusk</h2>
 			<p class="subtext editable">Where do you want to go today?</p>
-			<div class="cta button alt"><a href="/blog/">Next...</a></div>
+			<div class="cta button alt"><a href="/">Go back to the home page</a></div>
 		</div>
 	</div>
     {% if page.bottom_image_description %} 

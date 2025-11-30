@@ -12,13 +12,19 @@ bottom_image_description: Nikko National Park, Tochigi, Japan (2010)
 		<div class="hero-text-container">
 			<h1 class="editable">Search</h1>
 			<p class="subtext editable">Search my blog...</p>
-		<div class="cta button alt"><a href="/archive/">Next...</a></div>
+		<div class="cta button alt"><a href="/past/">Next...</a></div>
         </div>
     </div>
-	<div class="learn-more"><a href="#learn-more">Click here...<span class="arrow">&#x25BC;</span></a></div>
+	<div class="learn-more"><a href="#learn-more">More...<span class="arrow">&#x25BC;</span></a></div>
+    {% if page.image_description %} 
+      <p class="image-attribution">
+          <i>{{ page.image_description }}</i> 
+      </p>
+    {% endif %}
 </section>
-<section class="pad">
-    <div class="container" id="learn-more">
+<section class="pad" id="learn-more">
+    <div class="container">
+        <h1>Go ahead... Type away... Don't be shy...</h1>
       {% include search_ui.html %}
     </div>
 </section>
@@ -27,7 +33,7 @@ bottom_image_description: Nikko National Park, Tochigi, Japan (2010)
 		<div class="hero-text-container">
 			<h2 class="editable">snowdusk</h2>
 			<p class="subtext editable">Where do you want to go today?</p>
-			<div class="cta button alt"><a href="/blog/">Next...</a></div>
+			<div class="cta button alt"><a href="/past/">Next...</a></div>
 		</div>
 	</div>
     {% if page.bottom_image_description %} 

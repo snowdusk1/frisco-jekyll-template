@@ -5,6 +5,8 @@ tag:
   - house
 image: /images/carl_craig_20250921.jpg
 image_description: Carl Craig
+bottom_image: /images/on_the_way_to_hiroshima_city.jpeg
+bottom_image_description: On the way to Hiroshima City with Yū (2006)
 author_staff_member: snowdusk
 ---
 <!--more-->
