@@ -7,7 +7,6 @@ tag:
   - freestyle
 image: /images/jonzun_crew_20250907.jpg
 image_description: Jonzun Crew
-bottom_image: /images/momo_dj.jpeg
 author_staff_member: snowdusk
 ---
 <!--more-->

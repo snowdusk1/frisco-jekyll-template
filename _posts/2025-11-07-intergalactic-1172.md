@@ -7,8 +7,6 @@ tag:
   - techno 
 image: /images/technolandia_20251012.jpg
 image_description:
-bottom_image: /images/chuzenjiko.jpeg
-bottom_image_description: Lake Chuzenji, Nikko National Park, Tochigi, Japan (2010)
 author_staff_member: snowdusk
 ---
 <!--more-->

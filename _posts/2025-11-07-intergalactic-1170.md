@@ -7,8 +7,6 @@ tag:
   - ebm 
 image: /images/tragic_error_20251005.jpg
 image_description: Tragic Error
-bottom_image: /images/kinoko_chu_san_nensei.jpeg
-bottom_image_description: With my 3rd year junior high students, Kinoko Junior High, Ibara, Okayama, Japan (2009)
 author_staff_member: snowdusk
 ---
 <!--more-->

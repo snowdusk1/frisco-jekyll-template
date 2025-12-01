@@ -6,7 +6,6 @@ tag:
   - bassmusic
 image: /images/dbs_20250906.jpg
 image_description: Dynamik Bass System
-bottom_image: /images/cdj_wedding.jpg
 author_staff_member: snowdusk
 ---
 <!--more-->

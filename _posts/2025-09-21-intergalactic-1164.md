@@ -5,7 +5,6 @@ tag:
   - ebm
 image: /images/mcl_20250914.jpg
 image_description: Micro Chip League
-bottom_image: /images/cdjs.jpg
 author_staff_member: snowdusk
 ---
 <!--more-->

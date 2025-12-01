@@ -6,8 +6,6 @@ tag:
   - eurodisco
 image: /images/margot_20250817.jpg
 image_description: Margot
-bottom_image: /images/kinoko_yochien_2007.jpeg
-bottom_image_description: With Kinoko Kindergarten kids, Ibara, Okayama, Japan (2007)
 author_staff_member: snowdusk
 ---
 <!--more-->

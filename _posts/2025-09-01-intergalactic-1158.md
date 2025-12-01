@@ -5,8 +5,6 @@ tag:
   - electro
 image: /images/arpanet_20250824.jpg
 image_description: Arpanet
-bottom_image: /images/kagoshima_2005.jpeg
-bottom_image_description: Kagoshima, Japan (2005)
 author_staff_member: snowdusk
 ---
 <!--more-->

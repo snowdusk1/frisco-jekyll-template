@@ -5,8 +5,6 @@ tag:
   - electro
 image: /images/cybotron_20250928.jpg
 image_description: Cybotron
-bottom_image: /images/fukuyama_shimenawa.jpeg
-bottom_image_description: Making shimenawa (sacred Shinto rope), Fukuyama, Hiroshima, Japan (2005)
 author_staff_member: snowdusk
 ---
 <!--more-->

@@ -7,8 +7,6 @@ tag:
   - hinrg
 image: /images/gazebo_20250816.jpg
 image_description: Gazebo
-bottom_image: /images/sapporo_2006.jpeg
-bottom_image_description: Sapporo, Hokkaido, Japan (2006)
 author_staff_member: snowdusk
 ---
 <!--more-->

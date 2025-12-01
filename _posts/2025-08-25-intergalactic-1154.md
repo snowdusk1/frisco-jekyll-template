@@ -6,8 +6,6 @@ tag:
   - detroittechno
 image: /images/carl_craig_20250726.jpg
 image_description: Carl Craig
-bottom_image: /images/fukuyama_natsu_matsuri.jpeg
-bottom_image_description: Fukuyama Summer Festival, Fukuyama, Hiroshima, Japan (2006)
 author_staff_member: snowdusk
 ---
 <!--more-->

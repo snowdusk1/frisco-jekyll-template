@@ -5,8 +5,6 @@ tag:
   - electro
 image: /images/der_zyklus_20250928.jpg
 image_description: Der Zyklus
-bottom_image: /images/shiraishijima.jpeg
-bottom_image_description: Shiraishijima, Kasaoka, Okayama, Japan (2008)
 author_staff_member: snowdusk
 ---
 <!--more-->

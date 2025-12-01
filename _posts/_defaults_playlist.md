@@ -5,7 +5,6 @@ tag:
   -
 image: /images/
 image_description:
-bottom_image:
 author_staff_member: snowdusk
 ---
 <!--more-->

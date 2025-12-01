@@ -6,7 +6,6 @@ tag:
   - electro
 image: /images/dmx_krew_20251018.jpg
 image_description: DMX Krew
-bottom_image: /images/hiroshima_baseball.jpeg
 author_staff_member: snowdusk
 ---
 <!--more-->

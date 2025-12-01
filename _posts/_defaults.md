@@ -4,6 +4,6 @@ date:
 description:
 tag:
 image:
-image_description_top:
+image_description:
 author_staff_member:
 ---

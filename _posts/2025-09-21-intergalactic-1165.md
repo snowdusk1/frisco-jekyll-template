@@ -5,8 +5,6 @@ tag:
   - house
 image: /images/dave_lee_20250921.jpg
 image_description: Dave Lee
-bottom_image: /images/fujiyama_shizuoka.jpeg
-bottom_image_description: View of Mt. Fuji from Kannami, Shizuoka, Japan (2009)
 author_staff_member: snowdusk
 ---
 <!--more-->

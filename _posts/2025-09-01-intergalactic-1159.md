@@ -6,8 +6,6 @@ tag:
   - minimal
 image: /images/book_of_love_20250830.jpg
 image_description: Book of Love
-bottom_image: /images/kibitsuhiko.jpeg
-bottom_image_description: Kibitsuhiko Shrine, Okayama, Japan (2010)
 author_staff_member: snowdusk
 ---
 <!--more-->

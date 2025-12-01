@@ -5,8 +5,6 @@ tag:
   - electro
 image: /images/crazy_gang_20250823.jpg
 image_description: Crazy Gang
-bottom_image: /images/tokyo_disneyland_2006.jpeg
-bottom_image_description: Tokyo Disneyland 2006
 author_staff_member: snowdusk
 ---
 <!--more-->
