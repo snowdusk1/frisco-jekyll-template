@@ -60,3 +60,8 @@ p, address, ul {
 	line-height: 1.6em;
 	font-family: 'Lato', sans-serif;
 }
+
+/* Fix for nested list compounding font size issue */
+ul ul {
+	font-size: 1em; /* This resets the font size back to the parent element's size */
+}
