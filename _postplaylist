@@ -10,6 +10,6 @@ file="$now-$title.md"
 date1=$(date +"%Y-%m-%d %H:%M -0500")
 cp /Users/gary/jekyll/frisco-jekyll-template/_posts/_defaults_playlist.md /Users/gary/jekyll/frisco-jekyll-template/_posts/$file
 sed -i '' "s|date:|date: $date1|" /Users/gary/jekyll/frisco-jekyll-template/_posts/$file
-sed -i '' "s|title:|title: Intergalactic Wasabi Mix - Ep $ep - $date2 |" /Users/gary/jekyll/frisco-jekyll-template/_posts/$file
+sed -i '' "s|title:|title: Intergalactic - $ep - $date2 |" /Users/gary/jekyll/frisco-jekyll-template/_posts/$file
 sed -i '' "2s/\([0-9]\{4\}\)-\([0-9]\{2\}\)-\([0-9]\{2\}\)/\1\/\2\/\3/" /Users/gary/jekyll/frisco-jekyll-template/_posts/$file
 vim -c 'set expandtab' -c 'set tabstop=2' -c 'set shiftwidth=2' -c 'set softtabstop=2' /Users/gary/jekyll/frisco-jekyll-template/_posts/$file

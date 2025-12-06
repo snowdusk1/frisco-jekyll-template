@@ -5,6 +5,7 @@ tag:
   - ebm
 image: /images/fla_20250913.jpg
 image_description: Front Line Assembly
+comments: true
 author_staff_member: snowdusk
 ---
 <!--more-->

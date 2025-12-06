@@ -7,6 +7,7 @@ tag:
   - ebm 
 image: /images/tragic_error_20251005.jpg
 image_description: Tragic Error
+comments: true
 author_staff_member: snowdusk
 ---
 <!--more-->

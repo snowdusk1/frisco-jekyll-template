@@ -7,6 +7,7 @@ tag:
   - bassmusic
 image: /images/sync24_20251025.jpg
 image_description: Sync 24
+comments: true
 author_staff_member: snowdusk
 ---
 <!--more-->

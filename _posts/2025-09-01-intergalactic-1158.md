@@ -5,6 +5,7 @@ tag:
   - electro
 image: /images/arpanet_20250824.jpg
 image_description: Arpanet
+comments: true
 author_staff_member: snowdusk
 ---
 <!--more-->

@@ -5,6 +5,7 @@ tag:
   - house
 image: /images/carl_craig_20250921.jpg
 image_description: Carl Craig
+comments: true
 author_staff_member: snowdusk
 ---
 <!--more-->

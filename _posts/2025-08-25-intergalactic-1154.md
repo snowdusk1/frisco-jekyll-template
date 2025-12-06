@@ -6,6 +6,7 @@ tag:
   - detroittechno
 image: /images/carl_craig_20250726.jpg
 image_description: Carl Craig
+comments: true
 author_staff_member: snowdusk
 ---
 <!--more-->

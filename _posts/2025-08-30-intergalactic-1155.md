@@ -7,6 +7,7 @@ tag:
   - hinrg
 image: /images/gazebo_20250816.jpg
 image_description: Gazebo
+comments: true
 author_staff_member: snowdusk
 ---
 <!--more-->

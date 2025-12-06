@@ -6,6 +6,7 @@ tag:
   - electro
 image: /images/dmx_krew_20251018.jpg
 image_description: DMX Krew
+comments: true
 author_staff_member: snowdusk
 ---
 <!--more-->

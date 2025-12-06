@@ -6,6 +6,7 @@ tag:
   - acidhouse
 image: /images/technotronic_20250831.jpg
 image_description: Technotronic
+comments: true
 author_staff_member: snowdusk
 ---
 <!--more-->

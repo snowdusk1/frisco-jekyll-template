@@ -7,6 +7,7 @@ tag:
   - freestyle
 image: /images/jonzun_crew_20250907.jpg
 image_description: Jonzun Crew
+comments: true
 author_staff_member: snowdusk
 ---
 <!--more-->

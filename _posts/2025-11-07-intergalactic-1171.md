@@ -7,6 +7,7 @@ tag:
   - rave 
 image: /images/frankie_bones_20251011.jpg
 image_description: Frankie Bones
+comments: true
 author_staff_member: snowdusk
 ---
 <!--more-->

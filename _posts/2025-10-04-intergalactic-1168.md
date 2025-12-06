@@ -5,6 +5,7 @@ tag:
   - electro
 image: /images/cybotron_20250928.jpg
 image_description: Cybotron
+comments: true
 author_staff_member: snowdusk
 ---
 <!--more-->

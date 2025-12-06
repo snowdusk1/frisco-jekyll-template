@@ -5,6 +5,7 @@ tag:
   - house
 image: /images/dave_lee_20250921.jpg
 image_description: Dave Lee
+comments: true
 author_staff_member: snowdusk
 ---
 <!--more-->

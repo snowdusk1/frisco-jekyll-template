@@ -8,6 +8,7 @@ tag:
   - rave
 image: /images/digital_boy_20251004.jpg
 image_description: Digital Boy
+comments: true
 author_staff_member: snowdusk
 ---
 <!--more-->

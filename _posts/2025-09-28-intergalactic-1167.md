@@ -5,6 +5,7 @@ tag:
   - electro
 image: /images/der_zyklus_20250928.jpg
 image_description: Der Zyklus
+comments: true
 author_staff_member: snowdusk
 ---
 <!--more-->

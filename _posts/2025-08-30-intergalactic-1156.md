@@ -6,6 +6,7 @@ tag:
   - eurodisco
 image: /images/margot_20250817.jpg
 image_description: Margot
+comments: true
 author_staff_member: snowdusk
 ---
 <!--more-->

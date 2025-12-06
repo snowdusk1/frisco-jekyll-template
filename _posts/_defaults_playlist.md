@@ -1,10 +1,11 @@
 ---
-title: Intergalactic -
-date: -0500
+title:
+date:
 tag:
   -
 image: /images/
 image_description:
+comments: true
 author_staff_member: snowdusk
 ---
 <!--more-->

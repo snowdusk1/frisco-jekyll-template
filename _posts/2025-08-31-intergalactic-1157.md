@@ -5,6 +5,7 @@ tag:
   - electro
 image: /images/crazy_gang_20250823.jpg
 image_description: Crazy Gang
+comments: true
 author_staff_member: snowdusk
 ---
 <!--more-->

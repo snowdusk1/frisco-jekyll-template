@@ -6,6 +6,7 @@ tag:
   - bassmusic
 image: /images/dbs_20250906.jpg
 image_description: Dynamik Bass System
+comments: true
 author_staff_member: snowdusk
 ---
 <!--more-->

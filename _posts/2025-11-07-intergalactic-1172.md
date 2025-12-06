@@ -7,6 +7,7 @@ tag:
   - techno 
 image: /images/technolandia_20251012.jpg
 image_description:
+comments: true
 author_staff_member: snowdusk
 ---
 <!--more-->
