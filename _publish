@@ -4,36 +4,67 @@
 JEKYLL_DIR="/Users/gary/jekyll/frisco-jekyll-template"
 REMOTE_DEST="snowdusk@ma.sdf.org:/meta/www/s/snowdusk/"
 
+# --- PROGRESS SPINNER FUNCTION ---
+# This function displays a simple rotating spinner to show activity.
+spinner() {
+    local pid=$1
+    local delay=0.1
+    local spin=('|' '/' '-' '\')
+
+    # Wait a moment for the process to start before spinning
+    sleep 0.5
+
+    while [ -d /proc/$pid ] || ps -p $pid > /dev/null; do
+        printf "\r%s %s" "$2" "${spin[i++ % 4]}"
+        sleep $delay
+    done
+    printf "\r" # Move to the next line after the process finishes
+}
+# --------------------------------
+
 echo "--- Starting Jekyll Build and Deployment ---"
 
 # 1. Build the Jekyll site
 echo "1. Running Jekyll build..."
-bundle exec jekyll build "$JEKYLL_DIR"
 
-# Check if the build command succeeded (Exit code 0)
-if [ $? -eq 0 ]; then
-    echo "Jekyll build succeeded."
+# Execute the build command in the background
+bundle exec jekyll build "$JEKYLL_DIR" &
+BUILD_PID=$!
+
+# Start the spinner while the build is running
+spinner $BUILD_PID "Building site..."
+
+# Wait for the background process to finish and capture its exit code
+wait $BUILD_PID
+BUILD_STATUS=$?
+
+if [ $BUILD_STATUS -eq 0 ]; then
+    echo "✅ Jekyll build succeeded."
 
     # 2. Change permissions on the built files
     echo "2. Setting permissions (chmod 755)..."
     chmod -R 755 "$JEKYLL_DIR/_site/"
+    CHMOD_STATUS=$?
     
     # Check if chmod command succeeded
-    if [ $? -eq 0 ]; then
-        echo "Permissions set successfully."
+    if [ $CHMOD_STATUS -eq 0 ]; then
+        echo "✅ Permissions set successfully."
         
         # 3. Transfer the files to the remote server using rsync
         echo "3. Starting rsync deployment..."
-        rsync -avz "$JEKYLL_DIR/_site/"* "$REMOTE_DEST"
+
+        # Use the --progress flag with rsync for progress reporting
+        rsync -avz --progress "$JEKYLL_DIR/_site/"* "$REMOTE_DEST"
+        RSYNC_STATUS=$?
         
-        if [ $? -eq 0 ]; then
+        if [ $RSYNC_STATUS -eq 0 ]; then
             echo "--- Deployment Complete! ---"
         else
-            echo "--- ERROR: Rsync failed. Check connection or remote path. ---"
+            echo "--- ❌ ERROR: Rsync failed. Check connection or remote path. ---"
         fi
     else
-        echo "--- ERROR: Chmod failed. Check directory path and permissions. ---"
+        echo "--- ❌ ERROR: Chmod failed. Check directory path and permissions. ---"
     fi
 else
-    echo "--- ERROR: Jekyll build failed. Fix build errors before continuing. ---"
+    echo "--- ❌ ERROR: Jekyll build failed. Fix build errors before continuing. ---"
 fi
