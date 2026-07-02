@@ -1,0 +1,1 @@
+rsync -avz /Users/gary/jekyll/frisco-jekyll-template/_site/* snowdusk@ma.sdf.org:/meta/www/s/snowdusk/

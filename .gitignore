@@ -1,0 +1,6 @@
+_site/
+.sass-cache/
+.jekyll-metadata
+images/
+intergalactic/*.mp3
+*.mp3
