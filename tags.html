@@ -1,0 +1,56 @@
+---
+title: Tags 
+description: Choose a topic... 
+image: /images/shark.jpg
+image_description: Osaka Aquarium Kaiyukan, Osaka, Japan (2010) 
+---
+<section class="hero" style="background-image: url({% include relative-src.html src=page.image %})">
+	<div class="inner-hero text-container">
+		<div class="hero-text-container">
+            <h1 class="editable">{{ page.title}}</h1>
+            <p class="subtext editable">{{ page.description }}</p>
+			<div class="cta button alt"><a href="/blog/">Go back to the blog</a></div>
+		</div>
+	</div>
+	<div class="learn-more"><a href="#learn-more">More...<span class="arrow">&#x25BC;</span></a></div>
+    {% if page.image_description %} 
+      <p class="image-attribution">
+          <i>{{ page.image_description }}</i> 
+      </p>
+    {% endif %}
+</section>
+
+
+{% if page.image_description %} 
+   <p class="image-attribution">
+       <i>{{ page.image_description }}</i> 
+   </p>
+{% endif %}
+<section class="pad" id="learn-more">
+	<div class="container">
+        <h1>Click a tag...</h1>
+        <p>
+{% assign tags = site.tags | sort %}
+{% for tag in tags %}
+ <span class="site-tag">
+    <a href="/tag/{{ tag | first | slugify }}/"
+        style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%">
+            {{ tag[0] | replace:'-', ' ' }} ({{ tag | last | size }})
+    </a>
+</span>
+{% endfor %} 
+        </p>
+	</div>
+</section>
+<section class="hero" id="bottom-hero-js-target">
+    <div class="inner-hero text-container">
+		<div class="hero-text-container">
+            <h2 class="editable">{{ page.title }}</h2>
+            <p class="subtext editable">{{ page.description }}</p>
+			<div class="cta button alt"><a href="/blog">Go back to the blog</a></div>
+		</div>
+	</div>
+    <p class="image-attribution">
+        <i></i>
+    </p>
+</section>
